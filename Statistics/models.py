@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 from django.conf import settings
-from .available import df_available
+#from .available import df_available
 import sqlite3
 
 engine = settings.DATABASES['default']['NAME']
