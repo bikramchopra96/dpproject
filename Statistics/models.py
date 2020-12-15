@@ -9,15 +9,6 @@ engine = settings.DATABASES['default']['NAME']
  
 #Create your models here.
  
-
-class Product(models.Model):
-    productdate = models.DateTimeField()
-    high = models.DecimalField(decimal_places=5,max_digits=2)
-    low = models.DecimalField(decimal_places=5,max_digits=2)
-    popen = models.DecimalField(decimal_places=5,max_digits=2)
-    pclose = models.DecimalField(decimal_places=5,max_digits=2)
-    volume = models.BigIntegerField()
-    adjclose = models.DecimalField(decimal_places=5,max_digits=2)
     
 cnxn = sqlite3.connect(engine)
 
